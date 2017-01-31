@@ -20,3 +20,15 @@ ffunction countDevelopers(list) {
 function countDevelopers(list) {
   return list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length
 }
+
+function countDevelopers(a) {
+  return a.filter(d => d['continent'] === 'Europe' && d['language'] === 'JavaScript').length;
+}
+
+function countDevelopers(list) {
+  let count = 0;
+  list.map(person => {
+    if(person.continent === 'Europe' && person.language === 'JavaScript') count++;
+  });
+  return count;
+  }
