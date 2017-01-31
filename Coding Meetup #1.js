@@ -5,18 +5,18 @@ var list1 = [
   { firstName: 'Sumayah', lastName: 'M.', country: 'Tajikistan', continent: 'Asia', age: 30, language: 'CSS' }
 ];
 
-function countDevelopers(list) {
- var count = 0;
- list.forEach(countDevelopers)
-
-function countDevelopers (x) {
-  for (var key in x) {
-
-    if(x.continent == "Europe" && x.language =="JavaScript") {
-      count++;
+ffunction countDevelopers(list) {
+  var count = 0
+  for (var i = 0; i < list.length; i++) {
+    if(list[i].continent == 'Europe' && list[i].language == 'JavaScript') {
+      count++
   }
-}
 
 }
-return count;
+  return count
+}
+
+//Higher Order example taken from CodeWars
+function countDevelopers(list) {
+  return list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length
 }
