@@ -5,7 +5,7 @@ var list1 = [
   { firstName: 'Sumayah', lastName: 'M.', country: 'Tajikistan', continent: 'Asia', age: 30, language: 'CSS' }
 ];
 
-ffunction countDevelopers(list) {
+function countDevelopers(list) {
   var count = 0
   for (var i = 0; i < list.length; i++) {
     if(list[i].continent == 'Europe' && list[i].language == 'JavaScript') {
