@@ -89,4 +89,4 @@ function neckAndNeck(score, p2Score){
   if(win && score === p2Score + 2){
     pongAchievements.push("Neck and Neck");
   };
-};
+}
