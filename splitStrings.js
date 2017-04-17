@@ -26,4 +26,33 @@ function solution(str){
 }
 
 
+
+
 solution('fasdfadsd');
+
+
+// Cleaner version of the code above:
+function solution(str){
+   if (str.length % 2 === 0) {
+     var splitString = str.match(/.{1,2}/g);
+   } else {
+     splitString = str.match(/.{1,2}/g);
+     var lastIndex = splitString.pop();
+     while (lastIndex.length < 2) {
+       lastIndex += '_';
+      splitString.push(lastIndex)
+     }
+   }
+   return splitString;
+}
+
+
+// Top codewars solutions:
+function solution(str) {
+  return (str.length % 2 ? str + '_' : str).match(/../g);
+}
+
+function solution(str){
+  if (str.length%2) str += '_';
+  return str.match(/.{1,2}/g)
+}
