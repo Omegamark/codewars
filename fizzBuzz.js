@@ -28,3 +28,5 @@ function fizzBuzz (num) {
   console.log(numArray);
 }
 fizzBuzz(200);
+
+fizzBuzzBazz(limit, )
