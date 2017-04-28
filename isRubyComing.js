@@ -23,3 +23,23 @@ function checkLang(x) {
     // }
   }
 }
+
+// solution using find() **Working
+function isRubyComing(list) {
+  let solution;
+  list.find(function(x) {
+    console.log(x.language)
+
+    if (x.language === 'Ruby') {
+      solution = true;
+      return solution;
+
+    } else {
+      solution = false;
+      return solution;
+
+    }
+
+  });
+  return solution
+}
