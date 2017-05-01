@@ -66,12 +66,23 @@ function countLanguages(list) {
   }
 
 
-
-
-
-
-
-
-
-
 countLanguages(list1)
+
+// Best answers from codewars
+function countLanguages(list) {
+  return list.reduce(function(s, c) {
+
+    if(c.language in s)
+      s[c.language]++;
+    else
+      s[c.language] = 1;
+
+    return s;
+  }, {});
+}
+// Answer # 2
+function countLanguages(list) {
+  var count = {};
+  list.forEach(x => count[x.language] = (count[x.language] || 0) + 1);
+  return count;
+}
