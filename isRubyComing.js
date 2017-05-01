@@ -43,3 +43,15 @@ function isRubyComing(list) {
   });
   return solution
 }
+
+// Best solutions from codewars
+
+// Solution 1
+function isRubyComing(list) {
+  return list.some(e => e.language === 'Ruby');
+}
+
+// Solution 2
+function isRubyComing(list) {
+  return list.some(x => x.language === 'Ruby');
+}
