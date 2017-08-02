@@ -1,3 +1,4 @@
+"use strict";
 function domainName(url) {
   // Regex to remove everything but.
   // Still need to better understand Regex
@@ -12,6 +13,6 @@ domainName("http://www.zombie-bites.com");
 
 // Best answer from Codewars
 // *** Study this answer since it uses pure Regex ***
-// function domainName(url) {
-//   return url.match(/(?:http(?:s)?:\/\/)?(?:w{3}\.)?([^\.]+)/i)[1];
-// }
+function domainName(url) {
+  return url.match(/(?:http(?:s)?:\/\/)?(?:w{3}\.)?([^\.]+)/i)[1];
+}
